@@ -8,7 +8,7 @@ const translations = {
     contentTitle: "Unstoppable Starts Here℠",
     contentText:
       "Success shouldn’t just be a goal; it should be the starting point. As part of the RE/MAX® network you’ll experience a culture focused on resources that lift your business. Like supportive broker/owners with relevant field insight and values that make a difference in our communities. Worldwide exposure and connections with industry experts. And over 140,000 talented agents around the globe who will inspire you to work toward greatness.",
-    aboutTitle: "About",
+    aboutTitle: "About us",
     teamTitle: "Meet Our Team",
     teamBest: "MEET OUR BEST LEADERSHIP",
     teamText: "Dedicated to helping you find the perfect home, our team at Remax combines local expertise with a passion for real estate to provide exceptional service and support every step of the way.",
