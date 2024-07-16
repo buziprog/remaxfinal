@@ -1,0 +1,495 @@
+/* Base styling */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.navbar-custom {
+  background-color: #0c2749;
+}
+.navbar-custom .navbar-toggler {
+  border-color: white; /* Optional: change the border color */
+}
+
+.navbar-custom .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: white;
+}
+
+.navbar-custom .navbar-brand {
+  font-weight: 600; /* Semi-bold */
+}
+
+.content-custom {
+  background: linear-gradient(rgba(12, 39, 73, 0.5), rgba(12, 39, 73, 0.5)),
+    url("content.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.section {
+  padding: 2rem 1rem; /* Apply consistent vertical padding */
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 4rem 2rem; /* Adjust horizontal padding for tablet */
+  }
+}
+
+@media (min-width: 992px) {
+  .section {
+    padding: 4rem 4rem; /* Adjust horizontal padding for desktop */
+  }
+}
+
+.services,
+.properties,
+.contact,
+.content-custom,
+.about-us,
+.meet-team {
+  background-color: white;
+  color: black;
+}
+
+.content-custom,
+.meet-team {
+  background-color: #0c2749;
+  color: white;
+}
+
+.content-custom h2,
+.about-us h2,
+.meet-team h2,
+.services h2,
+.properties h2,
+.contact h2 {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.content-custom img,
+.about-us img,
+.contact img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.meet-team img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.services img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+.services .service-item {
+  margin-bottom: 2rem;
+}
+
+.properties .property-item {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1),
+    0 16px 32px rgba(0, 0, 0, 0.2); /* Add shadow with bigger bottom shadow */
+  border: none; /* Remove the border */
+  border-radius: 10px; /* Round the corners */
+  overflow: hidden; /* Ensure content stays within rounded corners */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.properties .property-img {
+  width: 100% !important;
+  height: 50% !important; /* Set image to be 50% of the card height */
+  object-fit: cover !important; /* Ensure image covers the full width/height without distortion */
+  border-top-left-radius: 10px !important; /* Round top corners */
+  border-top-right-radius: 10px !important; /* Round top corners */
+}
+
+.properties .property-details {
+  padding: 20px;
+  text-align: left; /* Align text to the left */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%; /* Set details to be 50% of the card height */
+}
+
+.properties .btn-white {
+  align-self: flex-start; /* Align button to the left */
+  background-color: #0c2749;
+  color: white;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.properties .btn-white:hover {
+  background-color: blue;
+  color: white;
+  border: 1px solid blue;
+}
+
+.properties h3 {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.contact {
+  background: linear-gradient(rgba(12, 39, 73, 0.5), rgba(12, 39, 73, 0.5)),
+    url("contact.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.footer {
+  background-color: #0c2749;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.flag-icon {
+  width: 24px;
+  height: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.flag-icon.en {
+  background: url("https://flagcdn.com/us.svg") no-repeat center center;
+  background-size: cover;
+}
+
+.flag-icon.sq {
+  background: url("https://flagcdn.com/al.svg") no-repeat center center;
+  background-size: cover;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.text-center-md {
+  text-align: center;
+}
+
+.justify-content-center-md {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-member {
+  border: 10px solid black;
+  border-bottom-width: 50px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  padding-top: 50px;
+}
+
+h5 {
+  padding-bottom: 100px;
+}
+
+.meet-team .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.meet-team .col-md-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+  box-sizing: border-box;
+  padding: 2%;
+}
+
+.team-member {
+  text-align: center;
+  border-top: 15px solid #fff;
+  border-left: 15px solid #fff;
+  border-right: 15px solid #fff;
+  border-bottom: 1px solid #fff;
+  position: relative;
+}
+
+.image-container {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  margin-top: -100px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.text-container {
+  background: white;
+  padding: 10px 0;
+  position: relative;
+  margin-top: -5px; /* Remove the gap between the image and the text */
+}
+
+.text-container p {
+  margin: 10px;
+  font-size: 16px;
+  color: black;
+}
+
+.text-container p:first-child {
+  font-weight: bold;
+}
+
+.services .service-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.services .service-item h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.services .service-item p {
+  font-size: 14px;
+  color: black;
+}
+
+.contact .contact-info {
+  font-size: 1.5rem; /* Increase the text size */
+  font-weight: bold;
+}
+
+.contact .contact-details {
+  font-size: 1.2rem; /* Slightly smaller for the details */
+  margin-bottom: 1rem; /* Add some space between items */
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.social-media svg {
+  fill: white;
+}
+
+.contact-details {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.footer-section h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid white;
+  padding-bottom: 0.5rem;
+}
+
+.quick-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-links li {
+  margin-bottom: 0.5rem;
+}
+
+.quick-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.quick-links a:hover {
+  color: #ffcc00;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.social-media a img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}
+
+.social-media a img:hover {
+  transform: scale(1.1);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.copyright {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .services .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .services .service-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+    box-sizing: border-box;
+    padding: 1%;
+  }
+
+  .meet-team .row {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+
+  .meet-team .col-md-3 {
+    flex: 0 0 50%; /* Adjusted to fit at least 2 team members on mobile width */
+    max-width: 50%;
+    margin-right: 10px;
+  }
+
+  .team-member {
+    border-width: 5px;
+    border-bottom-width: 25px;
+    margin-bottom: 10px;
+  }
+
+  .image-container {
+    height: 20%; /* Adjust height for mobile */
+    margin-top: -50px;
+  }
+
+  .text-container p {
+    font-size: 12px; /* Adjust text size for mobile */
+    margin: 5px;
+  }
+
+  .footer-section {
+    align-items: left;
+    text-align: left;
+  }
+
+  .footer-section h4 {
+    margin-bottom: 1rem;
+  }
+
+  .quick-links,
+  .social-media {
+    align-items: center;
+  }
+
+  .social-media a {
+    margin-bottom: 0.5rem;
+  }
+
+  .social-media {
+    flex-direction: row; /* Change to row direction for mobile */
+    justify-content: center; /* Center the icons */
+    align-items: center; /* Align the icons to the center */
+    gap: 0.5rem; /* Add some space between the icons */
+  }
+}
+
+.content-custom,
+.about-us {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.recruitment {
+  padding: 4rem 1rem; /* Adjust padding as needed */
+}
+
+.recruitment .btn-primary {
+  background-color: #0c2749;
+  border: 1px solid #0c2749;
+}
+
+.recruitment .btn-primary:hover {
+  background-color: blue;
+  color: white;
+  border: 1px solid blue;
+}
+
+.recruitment .recruitment-image {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .recruitment .recruitment-image {
+    height: 100%; /* Reset height for larger screens */
+  }
+}
