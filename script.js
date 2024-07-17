@@ -60,7 +60,7 @@ const translations = {
     contactEmail: "Email:",
     email: "info.home@remax-albania.al",
     sellProp: "PRONA NE SHITJE",
-    rentProp: "PRONA ME QERA",
+    rentProp: "PRONA ME QIRA",
     footerText: "REMAX ",
     nameLabel: "Emri",
     surnameLabel: "Mbiemri",
