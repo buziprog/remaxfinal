@@ -40,7 +40,7 @@
               <a class="nav-link" href="#about" id="about-link">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://www.remax-albania.com/contact.aspx" id="recruitment-link">Recruitment</a>
+              <a class="nav-link" href="#recruitment" id="recruitment-link">Recruitment</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#our-contact" id="contact-link">Contact</a>
@@ -60,37 +60,17 @@
       </div>
     </nav>
 
-    <div class=" section content-custom">
-      <div class="container">
-        <div class="row justify-content-center-md">
-          <div class="col-md-6 d-flex flex-column justify-content-center">
-            <h2 id="content-title" class="text-right-md">
-              Unstoppable Starts Here℠
-            </h2>
-            <p id="content-text" class="text-right-md">
-              Success shouldn’t just be a goal; it should be the starting point.
-              As part of the RE/MAX® network you’ll experience a culture focused
-              on resources that lift your business. Like supportive
-              broker/owners with relevant field insight and values that make a
-              difference in our communities. Worldwide exposure and connections
-              with industry experts. And over 140,000 talented agents around the
-              globe who will inspire you to work toward greatness.
-            </p>
-          </div>
-          <div
-            class="col-md-6 d-flex justify-content-center align-items-center"
-          >
-            <img
-              src="logo balona.png"
-              alt="REMAX"
-              class="img-fluid"
-              height="300px"
-              width="50%"
-            />
-          </div>
-        </div>
+   <div class="section content-custom">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class=" d-flex flex-column justify-content-center">
+        <h2 id="content-title" class="text-center gradient-text">
+          COME TO THE HOME OF THE PROFESSIONALS!
+        </h2>
       </div>
     </div>
+  </div>
+</div>
 
       <div id="about" class="text-center" ><h2 id="about-title">About Us</h2></div>
     <div id="carouselExampleIndicators" class=" section carousel slide" data-ride="carousel">
@@ -312,9 +292,7 @@
         <div class="property-item">
           <img src="remahome.jpeg" alt="Property 1" class="img-fluid property-img"/>
           <div class="property-details">
-            <p id="property-name-1">Shitet Apartament</p>
-            <p id="property-address-1">Hamdi Garunja  -  Liqeni i Thatë, Shqipëri</p>
-            <p id="property-price-1">145,000 €</p>
+          <p id="sell-prop">PRONA NE SHITJE</p>
             <a href="https://www.remax-albania.com/PublicListingList.aspx?SelectedCountryID=53#mode=gallery&cur=EUR&sb=MostRecent&page=1&sc=53&lsgeo=0,0,0,0&sid=55ae23f5-f832-4e6a-91b6-c0c49a20a467&oid=53026"><button class="btn btn-white" id="property-button-1">Learn More</button></a>
           </div>
         </div>
@@ -323,9 +301,7 @@
         <div class="property-item">
           <img src="qerashpi.jpeg" alt="Property 2" class="img-fluid property-img"/>
           <div class="property-details">
-            <p id="property-name-2">Jepet me qera Apartamenti</p>
-            <p id="property-address-2">Gjon Muzaka - Rruga e Bogdaneve, Shqipëri</p>
-            <p id="property-price-2">900 €/m</p>
+           <p id="rent-prop">PRONA ME QERA</p>
             <a href="https://www.remax-albania.com/PublicListingList.aspx?SelectedCountryID=53#mode=gallery&cur=EUR&sb=MostRecent&page=1&sc=53&lsgeo=0,0,0,0&sid=55ae23f5-f832-4e6a-91b6-c0c49a20a467&oid=53026"><button class="btn btn-white" id="property-button-2">Learn More</button></a>
           </div>
         </div>
@@ -337,22 +313,67 @@
 
 
 
-<div class="section recruitment d-flex align-items-center justify-content-center bg-light">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 d-flex justify-content-center align-items-center">
-        <img src="joinourteam.jpeg" alt="Join Our Team" class="img-fluid recruitment-image">
-      </div>
-      <div class="col-md-6 d-flex flex-column justify-content-center">
-        <div class="text-left">
-          <h2 id="join-us" class="display-4 font-weight-bold" style="color: #0c2749;">Join Our Team!</h2>
-          <p id="join-us-text">We are looking for talented individuals to join us. Be part of an innovative and dynamic team. Work with us to build a better future.</p>
-          <a href="https://www.remax-albania.com/contact.aspx" class="btn btn-primary">Join Now</a>
+<div id="recruitment" class="section recruitment d-flex align-items-center justify-content-center bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <img src="joinourteam.jpeg" alt="Join Our Team" class="img-fluid recruitment-image">
+        </div>
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+          <div class="text-left">
+            <h2 id="join-us" class="display-4 font-weight-bold" style="color: #0c2749;">Join Our Team!</h2>
+            <p id="join-us-text">We are looking for talented individuals to join us. Be part of an innovative and dynamic team. Work with us to build a better future.</p>
+            <!-- Form Start -->
+            <form id="contact-form">
+              <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label id="surname-label" for="surname">Surname</label>
+                <input type="text" class="form-control" id="surname" name="surname" required>
+              </div>
+              <div class="form-group">
+                <label id="phone-label" for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+              </div>
+              <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label id="message-label" for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+              </div>
+              <button id="button-label" style="margin-top: 10px;" type="submit" class="btn btn-primary">Send</button>
+            </form>
+            <!-- Form End -->
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function(){
+      emailjs.init("mqPuNPzntZ2xVuy28"); // Initialize EmailJS with your User ID
+    })();
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      emailjs.sendForm('service_ueplxvi', 'template_mkv1myk', this)
+        .then(function() {
+          alert('Email sent successfully!');
+        }, function(error) {
+          alert('Failed to send email. Please try again.');
+          console.log('Failed to send email:', error);
+        });
+    });
+  </script>
+
 
 
 
@@ -376,15 +397,15 @@
       </div>
       <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
         <div>
-          <h2>Address:</h2>
+          <h2 id="adresa-contact">Address:</h2>
           <p class="contact-details">
-            Rruga Ismail Qemali, perballe piceri Era, Tirane
+             Rruga Ismail Qemali, ish Blloku, Tirane
           </p>
-          <h2>Phone Number:</h2>
-          <a href="tel:+355 69 22 61 535" class="contact-details"
-            >+355 69 22 61 535</a
+          <h2 id="number-contact">Phone Number:</h2>
+          <a href="tel:+355 69 700 70 79" class="contact-details"
+            >+355 69 700 70 79</a
           >
-          <h2>Email:</h2>
+          <h2 id="email-contact">Email:</h2>
           <a href="mailto:info.home@remax-albania.al" class="contact-details"
             >info.home@remax-albania.al</a
           >
@@ -401,11 +422,9 @@
           <div class="col-md-4 d-flex align-items-center">
             <div class="footer-section text-left">
               <h1>REMAX</h1>
-              <p class="contact-details">
-                Rruga Ismail Qemali, perballe piceri Era, Tirane
-              </p>
-              <a href="tel:+355692261535" class="contact-details"
-                >+355 69 22 61 535</a
+             
+              <a href="tel:+355 69 700 70 79" class="contact-details"
+                >+355 69 700 70 79</a
               >
               <a
                 href="mailto:info.home@remax-albania.al"
@@ -420,7 +439,7 @@
               <ul class="quick-links">
                 <li><a id="home-link" href="https://www.remax-albania.com/sq-al/zyra/shqiperi//remax-home-group/53026">Home</a></li>
                 <li><a id="about-link" href="#about">About Us</a></li>
-                <li><a id="recruitment-link" href="https://www.remax-albania.com/contact.aspx">Recruitment</a></li>
+                <li><a id="recruitment-link" href="#recruitment">Recruitment</a></li>
                 <li><a id="contact-link" href="#our-contact">Contact</a></li>
                 <li><a id="properties-link" href="https://www.remax-albania.com/PublicListingList.aspx?SelectedCountryID=53#mode=gallery&cur=EUR&sb=MostRecent&page=1&sc=53&lsgeo=0,0,0,0&sid=55ae23f5-f832-4e6a-91b6-c0c49a20a467&oid=53026">Properties</a></li>
               </ul>
