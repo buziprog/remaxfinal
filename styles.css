@@ -1,4 +1,57 @@
-/* Base styling */
+.content-custom {
+  background: linear-gradient(rgba(12, 39, 73, 0.5), rgba(12, 39, 73, 0.5)),
+    url("remaxmain.jpeg") no-repeat center center;
+  background-size: cover;
+  color: white;
+  height: 90vh; /* Set height to 90% of the viewport height */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  padding: 0 2rem; /* Optional: Adjust padding as needed */
+}
+
+.gradient-text {
+  background: linear-gradient(100deg, white, blue, white, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.recruitment {
+  padding: 4rem 1rem; /* Adjust padding as needed */
+}
+
+.recruitment .recruitment-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure the image covers the container without distortion */
+  max-height: 500px; /* Set a maximum height to prevent excessive vertical stretching */
+}
+
+@media (min-width: 768px) {
+  .recruitment .recruitment-image {
+    height: auto; /* Ensure proper height for larger screens */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+  }
+}
+
+.section {
+  padding: 2rem 1rem; /* Apply consistent vertical padding */
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 4rem 2rem; /* Adjust horizontal padding for tablet */
+  }
+}
+
+@media (min-width: 992px) {
+  .section {
+    padding: 4rem 4rem; /* Adjust horizontal padding for desktop */
+  }
+}
+
+/* Additional Styles */
 html,
 body {
   height: 100%;
@@ -36,29 +89,6 @@ main {
   font-weight: 600; /* Semi-bold */
 }
 
-.content-custom {
-  background: linear-gradient(rgba(12, 39, 73, 0.5), rgba(12, 39, 73, 0.5)),
-    url("content.jpg");
-  background-size: cover;
-  color: white;
-}
-
-.section {
-  padding: 2rem 1rem; /* Apply consistent vertical padding */
-}
-
-@media (min-width: 768px) {
-  .section {
-    padding: 4rem 2rem; /* Adjust horizontal padding for tablet */
-  }
-}
-
-@media (min-width: 992px) {
-  .section {
-    padding: 4rem 4rem; /* Adjust horizontal padding for desktop */
-  }
-}
-
 .services,
 .properties,
 .contact,
@@ -75,7 +105,11 @@ main {
   color: white;
 }
 
-.content-custom h2,
+.content-custom h2 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .about-us h2,
 .meet-team h2,
 .services h2,
@@ -486,10 +520,5 @@ h5 {
 .recruitment .recruitment-image {
   width: 100%;
   height: auto;
-}
-
-@media (min-width: 768px) {
-  .recruitment .recruitment-image {
-    height: 100%; /* Reset height for larger screens */
-  }
+  object-fit: cover;
 }
